@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="XamarinSampleApp.MainPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True" Title="OpenBack Xamarin Sample">
+    <StackLayout Margin="16">
+        <Label x:Name="sdkLabel" Text="" HorizontalOptions="Center" VerticalOptions="Start" />
+        <Button Text="Set Custom Trigger 1 to 'Bob'" Clicked="SetCustom1_Clicked"/>
+        <Button Text="Set Custom Trigger 2 to 42" Clicked="SetCustom2_Clicked"/>
+        <Button Text="Set Custom Trigger 3 to 1.12" Clicked="SetCustom3_Clicked"/>
+        <Button x:Name="logButton" Text="" Clicked="LogGoal_Clicked"/>
+        <Entry x:Name="firstname" Placeholder="First Name" />
+        <Entry x:Name="lastname" Placeholder="Last Name" />
+        <Button Text="Save User Info" Clicked="SaveUserInfo_Clicked"/>
+    </StackLayout>
+</ContentPage>
